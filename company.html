@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ImmiApp</title>
+
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="/header.css">
+        <link rel="stylesheet" href="/forms.css">
+        <link rel="stylesheet" href="/page-company.css">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+    </head>
+    <body id="page-company">
+
+        <div id="container">
+
+            <header class="page-header">
+                <div class="top-bar-container">
+                    <a href="/">
+                        <img src="/back.svg" alt="Voltar">
+                    </a>
+                    <img src="/logo_verde.png" alt="ImmiApp">
+                </div>
+
+                <div class="header-content">
+                    <strong>Oportunidade para todos
+                    </strong>
+                    <p>O primeiro passo é preencher esse formulário de inscrição</p>
+
+                </div>
+
+            </header>
+
+            <main>
+
+                <form id="create-form" action="/save-classes" method="POST">
+                    <fieldset>
+                        <legend>Seus dados</legend>
+
+                        <div class="input-block">
+                            <label for="avatar">Nome Completo</label>
+                            <input name="name" id="name" required="required">
+                        </div>
+
+                        <div class="input-block">
+                            <label for="avatar">Link da sua foto
+                                <small>(Comece com o https://)</small>
+                            </label>
+                            <input name="avatar" id="avatar" type="url" required="required">
+                        </div>
+
+                        <div class="input-block">
+                            <label for="avatar">E-mail
+
+                            </label>
+                            <input name="avatar" id="avatar" type="email" required="required">
+                        </div>
+
+                        <div class="input-block">
+                            <label for="whatsapp">Telefone
+
+                            </label>
+                            <input name="whatsapp" id="whatsapp" type="tel" required="required">
+                        </div>
+
+                        <div class="input-block">
+                            <label for="avatar">Data de Nascimento
+
+                            </label>
+                            <input name="avatar" id="avatar" type="date" required="required">
+                        </div>
+                        <div class="input-block">
+                            <label for="avatar">Nacionalidade
+
+                            </label>
+                            <input name="avatar" id="avatar" type="url" required="required">
+                        </div>
+                        <div class="input-block">
+                            <label for="avatar">Idioma
+
+                            </label>
+                            <input name="avatar" id="avatar" type="url" required="required">
+                        </div>
+
+                        <div class="textarea-block">
+                            <label for="bio">Biografia
+                                <small>Breve Descrição da sua História. Opcional</small>
+                            </label>
+                            <textarea name="bio" id="bio"></textarea>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <div class="input-block">
+                            <label for="whatsapp">CEP
+
+                            </label>
+                            <input name="whatsapp" id="whatsapp" type="number" required="required">
+                        </div>
+
+                        <div class="input-block">
+                            <label for="whatsapp">Endereço
+                                <small>Rua/Avenida</small>
+                            </label>
+                            <input name="whatsapp" id="whatsapp" type="number" required="required">
+                        </div>
+                        <div class="input-block">
+                            <label for="whatsapp">Número
+                                <small></small>
+                            </label>
+                            <input name="whatsapp" id="whatsapp" type="number" required="required">
+                        </div>
+                        <div class="input-block">
+                            <label for="whatsapp">Bairro
+
+                            </label>
+                            <input name="whatsapp" id="whatsapp" type="number" required="required">
+                        </div>
+
+                        <div class="input-block">
+
+                            <label for="state">Estado</label>
+                            <select name="uf" required="required">
+                                <option value="">Selecione o estado</option>
+                                <input type="hidden" name="state">
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="city">Cidade</label>
+                            <select name="city" disabled="disabled" required="required">
+                                <option value="">Selecione a cidade</option>
+                            </select>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Dados Profissionais</legend>
+                        <div class="input-block">
+                            <label for="whatsapp">Experiência Profissional
+
+                            </label>
+                            <input name="whatsapp" id="whatsapp" type="number" required="required">
+                        </div>
+
+                        <div class="input-block">
+                            <label for="whatsapp">Formação Acadêmica
+
+                            </label>
+                            <input name="whatsapp" id="whatsapp" type="number" required="required">
+                        </div>
+
+                        <div class="input-block">
+                            <label for="whatsapp">Habilidades Chave
+
+                            </label>
+                            <input name="whatsapp" id="whatsapp" type="number" required="required">
+                        </div>
+
+                    </fieldset>
+
+                </form>
+
+                <footer>
+                    <p>
+                        <img src="/images/icons/warning.svg" alt="Aviso importante">
+                        Importante!
+                        <br>
+                        Preencha todos os dados
+                    </p>
+                    <button type="submit" form="create-form">Salvar cadastro</button>
+                    <!-- Colocado o id do form devido o botao ser fora do form -->
+                </footer>
+
+            </main>
+
+        </div>
+
+        <script src="/scripts/addField.js"></script>
+
+    </body>
+</html>

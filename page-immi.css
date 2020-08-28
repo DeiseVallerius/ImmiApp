@@ -1,0 +1,94 @@
+#page-immi #container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#page-immi main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
+#page-immi main .no-results {
+  max-width: 30rem;
+  margin: 12rem auto;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  #page-immi #container {
+    max-width: 100vw;
+  }
+
+  .page-header {
+    height: 340px;
+  }
+
+  .page-header .top-bar-container {
+    max-width: 1100px;
+  }
+
+  .page-header .header-content {
+    max-width: 740px;
+
+    margin: 0 auto;
+
+    flex: 1 1;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .page-header .header-content strong {
+    max-width: 350px;
+  }
+
+  #page-immi main {
+    padding: 32px 0;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  /*profissionais*/
+  .idea {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+  }
+
+  .idea img {
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+    border-radius: 50%;
+  }
+
+  .idea p {
+    margin: auto;
+    color: #777;
+  }
+
+  .idea .description {
+    margin: 16px 0;
+  }
+
+  .idea h3 {
+    margin: 15px 0 0;
+  }
+
+  .idea h2,
+  h3,
+  h4 {
+    margin: 0;
+  }
+
+  .idea h4,
+  p {
+    display: inline-block;
+    margin: 8px 5px;
+    align-items: center;
+  }
+}
